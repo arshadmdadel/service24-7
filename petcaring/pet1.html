@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Caring Service</title>
+    <link rel="stylesheet" href="pet1style.css">
+</head>
+<body>
+
+    <!-- <HEADER> -->
+        <header>
+            <div style="font-size: 37px; font-weight: 400; color: #099468; margin-left: 10px;">
+                <p style="text-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);">Service24/7</p>
+            </div>
+            <div
+                style="font-size: 20px; font-weight: 200;  width: 30vw; display: flex; align-items: center; justify-content: space-between;">
+                <a href="" class="A">Home</a>
+                <a href="" class="A">Review</a>
+                <a href="" class="A">Contact</a>
+                <select style="border: none; font-size: 20px; background-color: #fff; color: #099468; font-family: 'Times New Roman', Times, serif;"
+                    name="" id="">
+                    <option class="Service" value="" selected disabled>Service</option>
+                    <option class="Service" value="">Cleaning</option>
+                    <option class="Service" value="">Catering</option>
+                    <option class="Service" value="">Electrician</option>
+                    <option class="Service" value="">Security</option>
+                    <option class="Service" value="">Baby Sitting</option>
+                    <option class="Service" value="">Pet Caring</option>
+                </select>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <div><img src="../image/notification.png" alt=""></div>
+                <div style="padding-left: 35px;">
+                    <a href="login.html">
+                        <img src="../image/profile.png" alt="Profile">
+                    </a>
+                </div>
+            </div>
+        </header>
+    <!-- <HEADER> -->
+
+    <!-- Pet Caring Info Section -->
+    <section class="pet-care-services">
+        <div class="container">
+            <div class="pet-care-content">
+                <div class="pet-care-image">
+                    <img src="OIP.jpg" alt="Pet Care Image" style="height: 40vh; width: 20vw;">
+                </div>
+                <div class="pet-care-text">
+                    <h1>Welcome To Our Pet Care Services!</h1>
+                    <p>
+                        We offer top-notch pet care services ensuring the health and happiness of your beloved pets.
+                        Trust us for grooming, feeding, and comprehensive care to give your furry friends the love they deserve!
+                    </p>
+                    <div class="pet-care-features">
+                        <div>
+                            <p>✅ Professional Groomers</p>
+                            <p>✅ Flexible Scheduling</p>
+                            <p>✅ Daily Walks</p>
+                        </div>
+                        <div>
+                            <p>✅ Affordable Rates</p>
+                            <p>✅ Best Nutrition</p>
+                            <p>✅ Pet-Friendly Environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <h2>Transparent Pricing for You</h2>
+        <p>Choose the best plan for your pet care needs.</p>
+        <p style="color: red; font-size: 30px; font-weight: bold;">"Note : You have to provide the food for your own pet"</p>
+        <div class="pricing-cards">
+            <form method="post" action="processSelection.php">
+                <div class="card">
+                    <h3>Dog & Cat <br>(those generic)</h3>
+                    <p>place cost 100 tk/per day</p>
+                    <input type="hidden" name="pet_type" value="Dog & Cat">
+                    <input type="hidden" name="price" value="100">
+                    <button type="submit" class="card-button">Select</button>
+                </div>
+            </form>
+            <form method="post" action="processSelection.php">
+                <div class="card">
+                    <h3>Bird <br>(those generic)</h3>
+                    <p>place cost 80 tk/per day</p>
+                    <input type="hidden" name="pet_type" value="Bird">
+                    <input type="hidden" name="price" value="80">
+                    <button type="submit" class="card-button">Select</button>
+                </div>
+            </form>
+            <form method="post" action="processSelection.php">
+                <div class="card">
+                    <h3>Fish <br>(those aquatic pet)</h3>
+                    <p>place cost 70 tk/per day</p>
+                    <input type="hidden" name="pet_type" value="Fish">
+                    <input type="hidden" name="price" value="70">
+                    <button type="submit" class="card-button">Select</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    
+
+
+
+    <!-- <FOOTER> -->
+        <footer>
+
+            <div id="content">
+
+                <div id="foot1">
+                    <div style="display: flex;align-items: center;">
+                        <img src="../image/clean.png" alt="">
+                        <span style="font-size: 30px; font-weight: bold;">Service24/7</span>
+                    </div>
+                    <p style="font-size: 20px; margin-top: 15px;">Stay updated with our latest tips, service updates,
+                        and helpful articles on maintaining a spotless home.</p>
+                </div>
+                <div id="foot2">
+                    <h3>Company</h3>
+                    <a class="flink">About Us</a>
+                    <a class="flink">Services</a>
+                    <a class="flink">Our Team</a>
+                </div>
+                <div id="foot3">
+                    <h3 class="flink">Know More</h3>
+                    <a class="flink">Support</a>
+                    <a class="flink">Privacy</a>
+                    <a class="flink">Terms and Condition</a>
+                </div>
+                <div id="foot4">
+
+                </div>
+
+            </div>
+
+            <hr id="fhr">
+
+            <div id="foot5">
+                <p>2024 “Procleaning” All Rights Received</p>
+            </div>
+        </footer>
+    <!-- <FOOTER> -->
+
+</body>
+</html>

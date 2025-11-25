@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f8f4;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #099468;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+header a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #099468;
+    transition: width 0.3s;
+}
+
+header select {
+    border: none;
+    background-color: #fff;
+    color: #099468;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Babysitting Services Section */
+.babysitting-services {
+    padding: 50px 0;
+}
+
+.babysitting-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.babysitting-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.babysitting-text {
+    text-align: left;
+    max-width: 600px;
+}
+
+.babysitting-text h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.babysitting-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.babysitting-features {
+    display: flex;
+    gap: 50px;
+}
+
+.babysitting-features p {
+    font-size: 16px;
+    color: #333;
+    background-color: #dff7e1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pricing h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.pricing p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #099468;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card-button {
+    background: white;
+    color: #099468;
+    border: 2px solid #099468;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card-button:hover {
+    background: #099468;
+    color: white;
+}
+
+/* <!-- <FOOTER> --> */
+footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: #111D15;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#content {
+    height: 20vh;
+    width: 90vw;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#foot1 {
+    height: 15vh;
+    width: 20vw;
+}
+
+#foot2, #foot3 {
+    height: 15vh;
+    width: 15vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#foot5 {
+    width: 100vw;
+    text-align: center;
+}
+
+.flink {
+    text-decoration: none;
+    position: relative; /* Necessary for pseudo-element positioning */
+    color: #fff;
+    padding: 5px 0;
+}
+
+#fhr {
+    border: 1px solid white; /* White border */
+    width: 95%;
+    margin-left: 45px;
+}
+
+/* <!-- <FOOTER> --> */

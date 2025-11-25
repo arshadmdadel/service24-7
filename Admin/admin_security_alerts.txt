@@ -1,0 +1,90 @@
+2025-10-18 20:33:11 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 20:49:30 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 20:49:36 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 20:49:37 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 20:49:37 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 20:54:49 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 21:00:11 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: 🚫 BLOCKED
+Reason: Too many requests: Attempt #6 (Limit: 5 per minute)
+-------------------------------------------
+
+2025-10-18 21:13:08 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: 🚫 BLOCKED
+Reason: Request limit exceeded (Attempt #6, Limit: 5/min)
+-------------------------------------------
+
+2025-10-18 21:33:49 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 21:43:21 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.01 KB
+Status: BLOCKED
+-------------------------------------------
+
+2025-10-18 21:55:25 - ADMIN ALERT
+Admin: primary_admin (Role: primary)
+IP: ::1
+Action: user_data_export
+Size: 3.17 KB
+Status: BLOCKED
+-------------------------------------------
+

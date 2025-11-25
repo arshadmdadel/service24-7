@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* <!-- <HEADER> --> */
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+a{
+    text-decoration: none;
+
+}
+.A{
+    color: black;
+}
+
+a:hover{
+    color: #099468;
+}
+
+/* <!-- <HEADER> --> */
+
+
+
+.middle{
+    height: 90vh;
+    width: 100vw;
+
+    background-color: #099468;
+    background-image: url('security.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.middle-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    opacity: 0.7;
+    font-weight: bold;
+    color: rgb(33, 29, 29);
+    margin-left: 800px;
+    opacity: 1;
+   
+}
+
+.appointment-btn{
+  height: 60px;
+  width: 190px;
+  color: white;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(50, 50, 155);
+
+  border-radius: 5px;
+  border: 2px solid rgb(51, 51, 130);
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 1s;
+  
+  
+}
+
+.appointment-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/*midlle part gula*/
+
+
+.services-section {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #9fd1b5;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: black;
+}
+
+
+
+
+/*midlle part gula*/
+
+
+.blank{
+    width: 100vw;
+    height: 60vh;
+   
+}
+ .theif{
+    height: 80%;
+    width: 480px;
+    float: right;
+    margin-right: 40px;
+ }
+
+ .theif-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+
+    margin-left: 20px;
+  
+    
+ }
+
+
+
+/* first content */
+
+
+    .last-before{
+        height: 100vh;
+        width: 100vw;
+       
+       
+    }
+
+
+    .internal{
+        height: 80%;
+        width: 100vw;
+        
+        margin-top: 15px;
+        display: flex;
+    }
+
+    .content{
+        height: 90%;
+        width: 30%;
+  
+        
+        margin-left: 28px;
+        margin-top: 5px;
+    }
+
+    .book-button{
+        height: 80px;
+        width: 240px;
+  
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+
+        border-radius: 5px;
+     
+        margin-left: 30px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: rgb(180, 204, 180);
+        transition: 1s;
+    }
+
+    .book-button:hover{
+        color: white;
+        background-color: #099468;
+    }
+
+/* first content */
+  
+
+
+/* second content */
+
+.recently-book{
+    height: 20vh;
+    width: 100vw;
+   
+   
+}
+.left{
+    height: 100%;
+    width: 45%;
+    float: left;
+}
+.right{
+    height: 100%;
+    width: 35%;
+   
+    float: right;
+}
+
+
+/* second content */
+
+
+
+
+/*last one start*/
+
+
+.last-one{
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+
+/*last one end*/
+
+
+
+
+
+
+
+/* <!-- <FOOTER> --> */
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    background-color: #111D15;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    
+}
+
+#content{
+    height: 20vh;
+    width: 90vw;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#foot1{
+    height: 15vh;
+    width: 20vw;
+}
+
+#foot2{
+    height: 15vh;
+    width: 10vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#foot3{
+    height: 15vh;
+    width: 15vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#foot5{
+    width: 100vw;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid white; /* White border */
+    width: 95%;
+    margin-left: 45px;
+}

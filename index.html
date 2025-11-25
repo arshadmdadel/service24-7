@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Welcome to signup form</h2>
+            <p id="typing-text"></p>
+        </div>
+        <div class="right-section">
+            <div class="form"></div>
+            <h2>Signup with these services</h2>
+            <div class="social-icons">
+                <button type="button">G</button>
+                <button type="button">f</button>
+                <button type="button">t</button>
+            </div>
+            <p>or</p>
+            <form id="signupForm" method="POST" action="signup.php">
+                <div class="input-group">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I Agree All Statements In Terms Of Service</label>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Create an account</button>
+                </div>
+                <p>I'm already a member! <a href="login.html">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Typing effect script
+        const textArray = [
+            "Your desired food is not so far away from you.",
+            "Let's taste some food..."
+        ];
+        
+        const typingTextElement = document.getElementById("typing-text");
+        let textIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textIndex].length) {
+                typingTextElement.innerHTML += textArray[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100); // Adjust typing speed
+            } else {
+                setTimeout(() => {
+                    typingTextElement.innerHTML = ""; // Clear text after one sentence finishes
+                    charIndex = 0;
+                    textIndex = (textIndex + 1) % textArray.length;
+                    type();
+                }, 2000); // Pause before next sentence
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

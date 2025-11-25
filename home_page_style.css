@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* <!-- <HEADER> --> */
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.A {
+    text-decoration: none;
+    position: relative; 
+    color: black;
+    padding: 5px 0;
+}
+
+a:hover {
+    color: #099468;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #099468;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%; 
+}
+
+.Service {
+    height: 7vh;
+    width: 15vw;
+    border: none;
+    padding: 5px;
+    background: white;
+}
+
+/* select:hover,
+.Service:hover {
+    color: #099468;
+    border-bottom: 2px solid #099468;
+/* } */ 
+
+select {
+    outline: none; /* Removes the default outline for better visuals */
+}
+
+
+/* <!-- <HEADER> --> */
+
+
+#main1{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#main1_L{
+    height: 80vh;
+    width: 50%;
+    padding-left: 200px;
+    padding-top: 200px;
+
+    
+}
+
+#main1_R{
+    height: 80vh;
+    width: 50%;
+    background-image: url(image/Cleaning.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -200px;
+    opacity: 0.8;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    
+    
+}
+
+
+
+#main2{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main2_L{
+    height: 100%;
+    width: 50%;
+    padding-left: 200px;
+
+    
+}
+
+#main2_R{
+    padding-left: 200px;
+    height: 100%;
+    width: 50%;
+
+}
+
+#mhr {
+    border: 1px solid #099468; /* White border */
+    width: 95%;
+    margin-left: 45px;
+}
+
+
+
+.main3{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-wrapper{
+    vertical-align: middle;
+    /* max-width: 1200px; */
+    
+    margin: 25px 70px 55px;
+    margin-left: 300px;
+    
+}
+
+/* .card-list .card-item{
+    color: black;
+   user-select: none;
+   margin-top: 50px;
+   margin-bottom: 50px;
+    padding: 35px;
+    border-radius: 8px;
+    background-color: rgb(238, 247, 238);
+    background: rgba(255,255,255, 0.2);
+    box-shadow:2px 4px 4px 2px rgba(0,0,0, .1);
+    border:1px solid rgba(255,255,255, 0.5);
+    display: flex;
+    /* align-items: center; */
+    /* text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(30px); */
+/* } */ 
+
+.card-list .card-item .user-image{
+    width: 280px;
+    height: 140px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 5px solid #2dd673;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 15px;
+    color: #111D15;
+    font-weight: 500;
+    height: 10vh;
+    width: 15vw;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #fff;
+    border-color: #099468;
+    border: 2px solid #2dd673;
+    transition: 0.2s ease;
+    width: 10vw;
+
+}
+
+.card-list .card-item .message-button:hover{
+    background: #099468;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+ .slider-wrapper .swiper-slider-button{
+    color: #2dd673;
+    margin-top: -22px;
+    transition: 0.2s ease;
+    background-color: white;
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50px;
+
+ }
+
+
+ .slider-wrapper .swiper-slider-button:hover{
+    color: white;
+    background-color: #2dd673;
+ }
+
+
+ /* ======MEDIA QUERIES======== */
+
+ @media (max-widht:768px){
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-slider-button{
+        display: none;
+    }
+ }
+
+
+
+#main4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40vh;
+    width: 100vw;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+#main4_L{
+    height: 25vh;
+    width: 50vw;
+  
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+#main4_R{
+    height: 40vh;
+    width: 50vw;
+    padding-right: 100px;
+}
+
+#cartoon{
+    height: 39vh;
+    width: 40vw;
+    border-radius: 15px;
+    border: 1px rgba(255, 255, 255, 0.2);
+}
+
+
+#main5{
+    padding-top: 30px;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main5-L{
+    height: 100%;
+    width: 50%;
+}
+
+
+#main5-R{
+    height: 100%;
+    width: 50%;
+    padding-top: 200px;
+}
+
+
+
+
+
+/* <!-- <FOOTER> --> */
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    background-color: #111D15;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    
+}
+
+#content{
+    height: 20vh;
+    width: 90vw;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#foot1{
+    height: 15vh;
+    width: 20vw;
+}
+
+#foot2{
+    height: 15vh;
+    width: 10vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#foot3{
+    height: 15vh;
+    width: 15vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#foot5{
+    width: 100vw;
+    text-align: center;
+}
+.flink{
+    text-decoration: none;
+    position: relative; 
+    color: #fff;
+    padding: 5px 0;
+}
+
+#fhr {
+    border: 1px solid white; 
+    width: 95%;
+    margin-left: 45px;
+}
+
+/* <!-- <FOOTER> --> */

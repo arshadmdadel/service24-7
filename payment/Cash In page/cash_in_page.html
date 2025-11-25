@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bKash Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff4273;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 120px;
+        }
+
+        .info-section {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .info-section p span {
+            color: #ff4273;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-field label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ff4273;
+        }
+
+        .form-field input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ffceda;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-field input:focus {
+            border-color: #ff4273;
+        }
+
+        .submit-btn, .close-btn {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .submit-btn {
+            background-color: #ff4273;
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #cc1e59;
+        }
+
+        .close-btn {
+            background-color: transparent;
+            color: #000000;
+            border: 1px solid #ff4273;
+            margin-right: 10px;
+        }
+
+        .close-btn:hover {
+            background-color: #ff4273;
+            color: #ffffff;
+        }
+
+        .terms {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .terms a {
+            color: #ff4273;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .success-message {
+            display: none;
+            color: #ff4273;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Bkash_logo.svg" alt="bKash Logo">
+        </div>
+        <div class="info-section">
+            <p>Merchant: <span>TestCheckoutDemoMerchant1</span></p>
+            <p>Invoice: <span>3221</span></p>
+            <p>Amount: <span id="amountDisplay">৳0</span></p>
+        </div>
+        <form id="paymentForm">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label for="accountNumber">Account Number</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="cashAmount">Cash Amount</label>
+                <input type="number" id="cashAmount" name="cashAmount" min="1" required>
+            </div>
+
+            <div class="terms">
+                By clicking on Confirm, you are agreeing to the 
+                <a href="terms-and-conditions.html" target="_blank">terms & conditions</a>.
+            </div>
+
+            <button type="submit" class="submit-btn">Confirm</button>
+            <button type="button" class="close-btn" onclick="window.close();">Close</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            Your cash-in request has been submitted successfully!
+        </div>
+    </div>
+
+    <script>
+        const cashAmountInput = document.getElementById('cashAmount');
+        const amountDisplay = document.getElementById('amountDisplay');
+        const paymentForm = document.getElementById('paymentForm');
+        const successMessage = document.getElementById('successMessage');
+
+        // Update the amount display when the user enters a cash amount
+        cashAmountInput.addEventListener('input', function() {
+            const amount = cashAmountInput.value;
+            amountDisplay.textContent = `৳${amount || 0}`;
+        });
+
+        // Handle form submission
+        paymentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+            paymentForm.reset();
+            amountDisplay.textContent = '৳0'; // Reset amount display
+        });
+    </script>
+</body>
+</html>

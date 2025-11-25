@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="petorder_style.css">
+</head>
+
+<body>
+    <!-- <HEADER> -->
+    <header>
+        <div style="font-size: 37px; font-weight: 400; color: #099468; margin-left: 10px;">
+            <p style="text-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);">Service24/7</p>
+        </div>
+        <div
+            style="font-size: 20px; font-weight: 200;  width: 30vw; display: flex; align-items: center; justify-content: space-between;">
+            <a href="" class="A">Home</a>
+            <a href="" class="A">Review</a>
+            <a href="" class="A">Contact</a>
+            <select
+                style="border: none; font-size: 20px; background-color: #fff; color: #099468; font-family: 'Times New Roman', Times, serif;"
+                name="" id="">
+                <option class="Service" value="" selected disabled>Service</option>
+                <option class="Service" value="">Cleaning</option>
+                <option class="Service" value="">Catering</option>
+                <option class="Service" value="">Electrician</option>
+                <option class="Service" value="">Security</option>
+                <option class="Service" value="">Baby Sitting</option>
+                <option class="Service" value="">Pet Caring</option>
+            </select>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <div><img src="../image/notification.png" alt=""></div>
+            <div style="padding-left: 35px;">
+                <a href="login.html">
+                    <img src="../image/profile.png" alt="Profile">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- <HEADER> -->
+
+   <!-- Order Page Content -->
+<div class="order-container">
+    <!-- Input Form -->
+    <div class="order-form">
+        <h2>Order Details</h2>
+        <form id="orderForm">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" required>
+
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" required>
+
+            <label for="pickupLocation">Pickup Location</label>
+            <input type="text" id="pickupLocation" placeholder="Enter location" required>
+
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="summary">
+            <div class="summary-item">
+                <span>Selected Service:</span>
+                <span id="summaryService">Worker Service</span> <!-- This can be dynamically updated as needed -->
+            </div>
+            <div class="summary-item">
+                <span>Pickup Location:</span>
+                <span id="summaryLocation">-</span>
+            </div>
+            <div class="summary-item">
+                <span>Number of Days:</span>
+                <span id="summaryDays">-</span>
+            </div>
+            <div class="summary-item">
+                <span>Total Cost:</span>
+                <span id="summaryCost">-</span>
+            </div>
+            <div class="summary-details">
+                <p><strong>Note:</strong> Please verify the order details before placing the order.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- <FOOTER> -->
+    <footer>
+
+        <div id="content">
+
+            <div id="foot1">
+                <div style="display: flex;align-items: center;">
+                    <img src="../image/clean.png" alt="">
+                    <span style="font-size: 30px; font-weight: bold;">Service24/7</span>
+                </div>
+                <p style="font-size: 20px; margin-top: 15px;">Stay updated with our latest tips, service updates,
+                    and
+                    helpful articles on maintaining a spotless home.</p>
+            </div>
+            <div id="foot2">
+                <h3>Company</h3>
+                <a class="flink">About Us</a>
+                <a class="flink">Services</a>
+                <a class="flink">Our Team</a>
+            </div>
+            <div id="foot3">
+                <h3 class="flink">Know More</h3>
+                <a class="flink">Support</a>
+                <a class="flink">Privacy</a>
+                <a class="flink">Terms and Condition</a>
+            </div>
+            <div id="foot4">
+
+            </div>
+
+        </div>
+
+        <hr id="fhr">
+
+        <div id="foot5">
+            <p>2024 “Procleaning” All Rights Received</p>
+        </div>
+    </footer>
+
+    <!-- <FOOTER> -->
+
+        <script>
+            function calculateDays(startDate, endDate) {
+                const start = new Date(startDate);
+                const end = new Date(endDate);
+                return Math.ceil((end - start) / (1000 * 60 * 60 * 24)) || 0;
+            }
+        
+            function calculateTotalCost(days) {
+                const pricePerDay = 100; // Replace this with the dynamic worker price from the backend
+                return days * pricePerDay;
+            }
+        
+            function updateSummary() {
+                const startDate = document.getElementById('startDate').value;
+                const endDate = document.getElementById('endDate').value;
+                const pickupLocation = document.getElementById('pickupLocation').value;
+        
+                const days = calculateDays(startDate, endDate);
+                const totalCost = calculateTotalCost(days);
+        
+                document.getElementById('summaryLocation').innerText = pickupLocation || '-';
+                document.getElementById('summaryDays').innerText = days > 0 ? days : '-';
+                document.getElementById('summaryCost').innerText = days > 0 ? `$${totalCost}` : '-';
+            }
+        
+            document.getElementById('orderForm').addEventListener('input', updateSummary);
+        
+            function placeOrder() {
+                const startDate = document.getElementById('startDate').value;
+                const endDate = document.getElementById('endDate').value;
+                const pickupLocation = document.getElementById('pickupLocation').value;
+        
+                const days = calculateDays(startDate, endDate);
+                const totalCost = calculateTotalCost(days);
+        
+                if (!startDate || !endDate || !pickupLocation || days <= 0) {
+                    alert('Please fill all fields and ensure the dates are valid.');
+                    return;
+                }
+        
+                // Redirect to payment.html with query parameters
+                const url = `payment.html?startDate=${encodeURIComponent(startDate)}&endDate=${encodeURIComponent(endDate)}&pickupLocation=${encodeURIComponent(pickupLocation)}&days=${days}&totalCost=${totalCost}`;
+                window.location.href = url;
+            }
+        </script>
+</body>
+
+</html>
