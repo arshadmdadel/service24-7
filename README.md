@@ -1,72 +1,64 @@
-🛠️ Service 24/7 – On-Demand Household Service Platform
+Service 24/7 – On-Demand Household Service Platform
 
-Service 24/7 is a secure web-based platform that simplifies daily household service management. Users can request, track, and pay for on-demand home services while enjoying real-time updates and strong security protection.
+Service 24/7 is a secure, web-based platform designed to simplify everyday household service management. It enables users to seamlessly request, track, and pay for services while ensuring real-time updates and robust security.
 
-🚀 Key Features
-🔧 Service Requests
+🚀 Core Features
+🔧 Smart Service Request System
 
-On-demand booking for daily household services
+Easily book on-demand household services through an intuitive interface.
+Includes secure authentication, role-based access, and real-time tracking for complete transparency.
 
-Secure authentication with role-based access control
+💬 Integrated Communication
 
-Real-time service request tracking
+Built-in messaging system that allows smooth and direct communication between users and service providers.
 
-Built-in messaging system for user–provider communication
+💳 Secure Payment System
+💰 bKash Integration (Demo)
 
-💳 Payment System
+Supports a simulated bKash payment gateway for safe and practical transaction testing.
 
-Integrated bKash Demo Payment Gateway
+🔐 Protected Transactions
 
-Secure payment flow for service bookings
+Ensures a secure payment flow with proper validation and handling of transaction data.
 
-Simulated transaction handling for testing and learning purposes
+🔔 Real-Time Notification System
+📢 Instant Alerts
 
-🔔 Notification System
+Get immediate updates on service requests, including approval, progress, and completion.
 
-Instant alerts for service request updates
+⏱️ Live Status Tracking
 
-Notifications for request approval, progress, and completion
+Stay informed with real-time notifications for every stage of the service lifecycle.
 
-🔐 Security Implementation
-
-Security is a core focus of Service 24/7, covering multiple threat vectors:
-
+🔐 Advanced Security Implementation
 🛡️ Infiltration Prevention
 
+Protects against unauthorized access through:
+
 Login attempt limiting
-
 SQL Injection prevention
-
 Password hashing
-
-Two-step verification
-
+Two-factor authentication
 CAPTCHA validation
-
 🔑 Propagation Control
 
+Maintains strict access policies using:
+
 Role-Based Access Control (RBAC)
-
 Secure session management
-
 🧩 Aggregation Protection
 
-Encryption of sensitive user data
+Safeguards sensitive user data with encryption techniques.
 
 🚨 Exfiltration Detection
 
-Automated security alerts for suspicious activities
+Monitors and detects suspicious activities with automated security alerts.
 
-💻 Technologies Used
-
+💻 Technology Stack
 Frontend: HTML, CSS, JavaScript
-
 Backend: PHP
-
 Database: MySQL
+Payment Gateway: bKash (Demo )
+🎯 Project Objective
 
-Payment Gateway: bKash (Demo / Sandbox)
-
-📌 Project Objective
-
-The objective of Service 24/7 is to provide a secure, efficient, and user-friendly platform that connects users with trusted household service providers while ensuring safe communication and payment handling.
+The goal of Service 24/7 is to deliver a secure, efficient, and user-friendly platform that connects users with reliable household service providers, ensuring safe communication, seamless service management, and secure transactions.
